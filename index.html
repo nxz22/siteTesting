@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>naz's portfolio</title>
+    <link rel="stylesheet" href="transfer-styles.css">
+    <link rel="stylesheet" href="index_styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+
+<body>
+
+    <div class="music-container">
+        <div class="drag-handle">Dragggggggggggggg</div>
+
+        <audio id="musicBar" controls autoplay>
+            <source src="assets/music/nobonoko - Strawberry Cake.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+
+        <!-- CD Asset -->
+        <div class="cd" id="cdElement">
+            <img src="assets/static/disc.png" alt="CD" class="rotating">
+        </div>
+      
+        <!-- Music with title at the top -->
+        <div class="music-info">
+            <p class="music-title" id="musicTitle">
+                <span class="music-prefix">Now Playing</span>
+                <span id="songTitle">nobonoko - Strawberry Cake</span>
+            </p>
+            <img src="assets/static/musicbar.png" alt="Backdrop" class="music-backdrop">
+            <img src="assets/static/play.png" alt="Play" id="playPauseButton" class="play-pause">
+        </div>
+      </div>
+      
+      
+    
+    <!-- Mobile Menu Button -->
+    <div id="mobileMenuButton">
+        <img src="assets/static/mb_menu.png" alt="Menu" onclick="toggleMenu()"> 
+    </div>
+
+    <div id="mobileFullscreenMenu" class="mobile-fullscreen-menu">
+        <a href="" class="mobile-menu-option">
+            <img src="assets/static/home.png" alt="Home">
+            <span><strong>Home</strong></span>
+        </a>
+
+        <a href="tech.html" class="mobile-menu-option">
+            <img src="assets/static/tech.png" alt="Technical">
+            <span>Technical</span>
+        </a>
+
+        <a href="creative.html" class="mobile-menu-option">
+            <img src="assets/static/create.png" alt="Creative">
+            <span>Creative</span>
+        </a>
+
+        <a href="resume.html" class="mobile-menu-option">
+            <img src="assets/static/resume.png" alt="Resume">
+            <span>Resume</span>
+        </a>
+    </div>
+
+     <!-- Regular Menu -->
+    <div id="menuContainer" class="draggable">
+        <div class="drag-handle">Draggggg</div>
+
+        <img id="navbar" src="assets/static/navbar.png" class="navbar">
+      
+        <a href="" class="menu-item but_index">
+            <img src="assets/static/home.png">
+        </a>
+      
+        <a href="tech.html" class="menu-item but_tech">
+            <img src="assets/static/tech.png">
+        </a>
+      
+        <a href="creative.html" class="menu-item but_create">
+            <img src="assets/static/create.png">
+        </a>
+        
+        <a href="resume.html" class="menu-item but_resume">
+            <img src="assets/static/resume.png">
+        </a>
+      </div>
+
+    <div class="scroll-prompt">
+        scroll to discover more
+        <div class="arrow">v</div>
+    </div>
+
+    <div class="about-container fade-in">
+        <div class="about-content">
+            <h1 class="about-header"><span class="hi">hi!</span> <span class="name">i'm naz!</span></h1>
+            <h2 class="about-subtitle">innovator, illustrator, and developer</h2>
+            <img src="assets/static/test_about.png" alt="About Image" class="about-image">
+        </div>
+    </div>
+    
+<div class="hidden-content">
+
+<!-- Projects Section -->
+<div class="projects-section">
+    <h2 class="section-title">Highlighted Projects</h2>
+    <div class="divider-line"></div> 
+    <div class="project-container">
+        <!-- Project 1 -->
+        <div class="project">
+            <div class="project-thumbnail-container">
+                <img src="assets/static/dyn_thumb.png" id="dyn_thumb" class="project-thumbnail">
+            </div>
+            <div class="project-info">
+                <img src="assets/static/tandon_long_color.png" alt="Company Logo" class="company-logo">
+                <a href="dynamic-gesture-password.html" class="project-link">
+                    <h3 class="project-title">Dynamic Gesture Password System</h3>
+                
+                <p class="project-description">
+                    Developing an innovative motion-based password system on the Circuit Playground Classic board 
+                    using Arduino and SPI/I2C libraries, enhanced with custom low-pass filtering for precise accelerometer 
+                    readings and a secure two-step motion pattern verification process.
+                </p>
+
+            </a>
+                <div class="project-tags">
+                    <span class="tag">C++</span>
+                    <span class="tag">Embedded Systems</span>
+                    <span class="tag">Academic</span>
+                </div>
+            </div>
+        </div>
+        <!-- Project 2 -->
+        <div class="project alternate-layout">
+            <div class="project-info">
+                <a href="training-monkeys.html" class="project-link">
+                    <h3 class="project-title">Training Monkeys with Pokémon</h3>
+                <p class="project-description">
+                    Explored the intersection of gaming, AI, and animal behavior by developing a program
+                    that enables monkeys to play Pokémon Emerald, incorporating a custom monkey 
+                    character and a machine learning model to interpret their movements, creating a 
+                    humorous and innovative gaming experience.
+                </p>
+            </a>
+                <div class="project-tags">
+                    <span class="tag">Python</span>
+                    <span class="tag">Machine Learning</span>
+                    <span class="tag">Solo Project</span>
+                </div>
+            </div>
+            <div class="project-thumbnail-container">
+                <img src="assets/static/test_img2.png" alt="Project Thumbnail" class="project-thumbnail">
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    
+    <div class="divider-line"></div> 
+    <div class="container">
+    
+    
+    <!-- What am I playing Section -->
+    <div class="content-wrapper">
+        <!-- What I'm Listening To Section -->
+        <div class="content-section listening-section">
+            <h2>What I'm Listening To</h2>
+            <p>Atarashii Gakko, Carlos Eiene, Louie Zong</p>
+            <div class="image-container">
+                <img src="assets/static/listening.png" alt="Listening Image">
+            </div>
+        </div>
+        
+        <!-- What I'm Playing Section -->
+        <div class="content-section playing-section">
+            <h2>What I'm Playing</h2>
+            <p>Yakuza 4, Pokemon Scarlet, Omori</p>
+            <div class="image-container">
+                <img src="assets/static/playing.png" alt="Playing Image">
+            </div>
+        </div>
+    </div>
+    
+</div>
+
+      <script src="scripts.js"></script>
+      
+</body>
+</html>

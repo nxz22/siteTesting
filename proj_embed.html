@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>naz's portfolio</title>
+    <link rel="stylesheet" href="transfer-styles.css">
+    <link rel="stylesheet" href="proj-styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+
+<body>
+
+    <div class="music-container">
+        <div class="drag-handle">Dragggggggggggggg</div>
+
+        <audio id="musicBar" controls autoplay>
+            <source src="assets/music/[Katamari Damacy] Lonely Rolling Star.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+
+        <!-- CD Asset -->
+        <div class="cd" id="cdElement">
+            <img src="assets/static/disc.png" alt="CD" class="rotating">
+        </div>
+      
+        <!-- Music with title at the top -->
+        <div class="music-info">
+            <p class="music-title" id="musicTitle">
+                <span class="music-prefix">Now Playing</span>
+                <span id="songTitle">Katamari - Lonely Rolling Star</span>
+            </p>
+            <img src="assets/static/musicbar.png" alt="Backdrop" class="music-backdrop">
+            <img src="assets/static/play.png" alt="Play" id="playPauseButton" class="play-pause">
+        </div>
+      </div>
+      
+    <!-- Mobile Menu Button -->
+    <div id="mobileMenuButton">
+        <img src="assets/static/mb_menu.png" alt="Menu" onclick="toggleMenu()"> 
+    </div>
+
+    <div id="mobileFullscreenMenu" class="mobile-fullscreen-menu">
+        <a href="" class="mobile-menu-option">
+            <img src="assets/static/home.png" alt="Home">
+            <span><strong>Home</strong></span>
+        </a>
+
+        <a href="tech.html" class="mobile-menu-option">
+            <img src="assets/static/tech.png" alt="Technical">
+            <span>Technical</span>
+        </a>
+
+        <a href="creative.html" class="mobile-menu-option">
+            <img src="assets/static/create.png" alt="Creative">
+            <span>Creative</span>
+        </a>
+
+        <a href="resume.html" class="mobile-menu-option">
+            <img src="assets/static/resume.png" alt="Resume">
+            <span>Resume</span>
+        </a>
+    </div>
+
+     <!-- Regular Menu -->
+    <div id="menuContainer" class="draggable">
+        <div class="drag-handle">Draggggg</div>
+
+        <img id="navbar" src="assets/static/navbar.png" class="navbar">
+      
+        <a href="index.html" class="menu-item but_index">
+            <img src="assets/static/home.png">
+        </a>
+      
+        <a href="tech.html" class="menu-item but_tech">
+            <img src="assets/static/tech.png">
+        </a>
+      
+        <a href="creative.html" class="menu-item but_create">
+            <img src="assets/static/create.png">
+        </a>
+        
+        <a href="resume.html" class="menu-item but_resume">
+            <img src="assets/static/resume.png">
+        </a>
+      </div>
+
+<!-- Page Exclusive -->
+<div class="title-container fade-down">
+    <img src="assets/static/tandon_long_color.png" alt="Company Logo" class="company-logo">
+    <span class="tiny-text">2023 - Embedded Systems Competition</span>
+    <h1 class="main-title">Dynamic Gesture Password System</h1>
+    <div class="project-tags">
+        <span class="tag">C++</span>
+        <span class="tag">Embedded Systems</span>
+        <span class="tag">Academic</span>
+    </div>
+</div>
+
+<!-- Sidebar with Contents -->
+<aside class="sidebar fade-down">
+    <div class="sidebar-content">
+        <img src="assets/static/content_sec.png" alt="Sidebar Background" class="sidebar-background">
+        <ul>
+            <li><a href="#overview">Overview</a></li>
+            <li><a href="#highlights">Highlights</a></li>
+            <li><a href="#context">Context</a></li>
+            <li><a href="#updateflow">Update Flow</a></li>
+            <li><a href="#layout">Code Snippets</a></li>
+            <li><a href="#system-architecture">System Arch.</a></li>
+            <li><a href="#final">Final Design</a></li>
+            <li><a href="#retrospective">Retrospective</a></li>
+        </ul>
+    </div>
+</aside>
+
+
+
+<div class="full-screen-image">
+    <img src="assets/static/proj_backdrop.png" alt="Fullscreen Image">
+</div>
+<div class="overlay-layer fade-in">
+    <img src="assets/static/preview_test.png" alt="Overlay Image">
+</div>
+
+<!-- Overview section -->
+<section id="overview" class="overview fade-in">
+    <div class="content">
+        <div class="overview-split">
+            <div class="overview-left">
+                <h4>My Role</h4>
+                <p><strong>Firmware Development Engineer</strong></p>
+                <h4>Team</h4>
+                <p>Nazeem Bacus, Preston Hochheiser, Alexander McBride</p>
+                <h4>Timeline & Status</h4>
+                <p><strong>Date of Completion:</strong> 5/16/23 <strong>Status:</strong> Successfully Completed</p>    
+            </div>
+            <div class="overview-right">
+                <h4>Overview</h4>
+                <p>Developed a secure and innovative password system using the Circuit Playground Classic board. Utilized an ATmega32U4 processor and Arduino library. 
+                    Employed an accelerometer-based authentication method.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="divider-line"></div> 
+
+<!-- Highlights Section -->
+<section id="highlights" class="highlights-section fade-in section">
+    <div class="content">
+        <div class="highlights-title">
+            <h4>Project Highlights</h4>
+        </div>
+        <div class="highlights-image">
+            <img src="assets/static/posthigh.png" class="posthigh" alt="Project Highlights">
+        </div>
+    </div>
+</section>
+
+<!-- Separate Section for Image Header -->
+<section id="image-header" class="image-header-section fade-in section">
+    <img src="assets/static/context_bar.png" style="width: 100%;">
+</section>
+
+<!-- Context Section -->
+<!-- Context Section -->
+<section id="context" class="context-section fade-in section">
+    <div class="content">
+        <div class="context-text">
+            <h1>Transforming Security with Accelerometer-Based Authentication.</h1>
+            <p>For our <strong>Embedded Systems Design</strong> class, our task was to utilize data from an accelerometer, built into the ATmega32U4 on a Circuit Playground Classic, and/or gyro to create a novel security system. The core idea was to record a hand movement sequence, which would serve as a unique key to unlock a resource. This approach marked a departure from traditional text-based passwords, venturing into the realm of motion-based authentication.</p>
+            <div class="new-image">
+                <img src="assets/static/impress.png" alt="New Context Image">
+            </div>
+        </div>
+        <div class="context-image">
+            <img src="assets/static/proj_paper.png">
+        </div>
+    </div>
+</section>
+
+
+<!-- Separate Section for Image Header -->
+<section id="image-header" class="image-header-section fade-in section">
+    <img src="assets/static/update_bar.png" style="width: 100%;">
+</section>
+
+<!-- Update Flow Section -->
+<section id="updateflow" class="update-flow-section fade-in section">
+    <div class="content">
+
+    </div>
+</section>
+<img id="updateflow-img" src="assets/static/proj_diagram.png" alt="Project Layout Image">
+
+
+<!-- Separate Section for Image Header -->
+<section id="image-header" class="image-header-section fade-in section">
+    <img src="assets/static/cod_bar.png" style="width: 100%;">
+</section>
+
+<!-- Layout Section -->
+<section id="layout" class="layout-section fade-in section">
+    <div class="content">
+        <div class="side-by-side-container">
+            <div class="code-and-text">
+                <div class="code-container">
+                    <div class="code-header">cpp</div>
+                    <pre class="code-block">
+short lowPassX(short input) {
+    short output = (previousInputX * (TS / T)) - (previousOutputX * (TS / T - 1));
+    previousInputX = input;
+    previousOutputX = output;
+    return output;
+    }  // Similar functions for Y and Z axes
+   
+void loop() {
+    PORTC &= ~(1 << 7);
+    while (n < ARRAY_SIZE) {
+        if (digitalRead(PD4) && !Left_buttonPressed) {
+            Left_buttonPressed = true;
+            Serial.println("Recording Button Clicked");
+            delay(1000); // delay before recording starts
+        
+            PORTC |= (1 << 7); // turn on LED 
+            digitalWrite(PD7, HIGH);
+            delay(5);
+        
+            // Accelerometer data recording
+            unsigned char lowRead;
+            digitalWrite(8, LOW);
+            SPI.transfer(0b10000000 | 0x28);
+            lowRead = SPI.transfer(0xFF);
+            digitalWrite(8, HIGH);
+            delay(2);
+// ... [Remaining code for X, Y, and Z axis data recording for Current_Pass]
+</pre>
+                </div>
+                <div class="text-container">
+                    <p>
+                        These functions (shown here for the X-axis) apply a low-pass filter to the accelerometer data. 
+                        They smooth out the readings by calculating a weighted average of current and previous inputs and outputs, 
+                        which is critical for accurate motion detection.The segment in <strong>void loop()</strong> records the current password data. 
+                        When the <strong>left button</strong> is pressed, it activates recording and captures accelerometer data along the X, Y, and Z axes.
+                        This data is stored in <strong>Current_Pass_X/Y/Z</strong> arrays.
+                    </p>
+                </div>
+            </div>
+            <div class="code-and-text">
+                <div class="code-container">
+                    <div class="code-header">cpp</div>
+                    <pre class="code-block">
+for (size_t i = 0; i < ARRAY_SIZE; i++) {
+    if (abs(Current_Pass_X[i] - In_Progress_Pass_X[i]) > tolerance) {
+        count_x++;
+    }
+    if (abs(Current_Pass_Y[i] - In_Progress_Pass_Y[i]) > tolerance) {
+        count_y++;
+    }
+    if (abs(Current_Pass_Z[i] - In_Progress_Pass_Z[i]) > Z_tolerance) {
+        count_z++;
+    }
+}
+
+// Print count values for each axis
+Serial.println("-Inaccuracies-");
+Serial.print("X: "); Serial.println(count_x);
+Serial.print("Y: "); Serial.println(count_y);
+Serial.print("Z: "); Serial.println(count_z);
+
+total = count_x + count_y + count_z;
+
+// Determine if the passes match
+if (total > 162) { // Failure threshold
+    isMatching = false;
+    Serial.println("MISMATCH");
+} else {
+    isMatching = true;
+    Serial.println("MATCH");
+}
+
+</pre>
+                </div>
+                <div class="text-container">
+                    <p>
+                        This code segment compares the saved password data (<strong>Current_Pass_X/Y/Z</strong>) with the attempt data 
+                        (<strong>In_Progress_Pass_X/Y/Z</strong>). It counts the number of times the differences in accelerometer readings 
+                        exceed certain tolerances and uses this count to determine if the password attempt is successful.
+                    </p>
+                </div>
+                <img class="overlay-image" src="assets/static/note.png" alt="Overlay Image">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Separate Section for Image Header -->
+<section id="image-header" class="image-header-section fade-in section">
+    <img src="assets/static/system_bar.png" style="width: 100%;">
+</section>
+
+
+<!-- System Architecture and Design Section -->
+<section id="system-architecture" class="system-arch-section fade-in section">
+    <div class="content">
+        <!-- Hardware Configuration -->
+        <div class="system-arch-category">
+            <div class="system-arch-title">
+                <h3>Hardware Configuration</h3>
+                <p>
+                    The hardware configuration featured the <strong>Circuit Playground Classic Board</strong>, which employed the <strong>ATmega32U4 processor</strong>, crucial for our system's operation. An <strong>accelerometer</strong> was also integral, capturing motion data, which was the basis of our password system.
+                </p>
+                <h3>Software Architecture</h3>
+                <p>
+                    Our software architecture utilized the <strong>Arduino Framework</strong>, specifically the <strong>Arduino.h and SPI.h libraries</strong>, providing a solid foundation for programming the ATmega32U4 processor. It featured a <strong>modular design</strong>, where code was structured into functions for better clarity and maintainability.
+                </p>
+            </div>
+            <div class="system-arch-content">
+                <img src="assets/static/impress3.png" alt="Hardware and Software Configuration">
+            </div>
+        </div>
+
+        <!-- Data Handling and Processing -->
+        <div class="system-arch-category data-handling-category">
+            <div class="system-arch-title full-width">
+                <h3>Data Handling and Processing</h3>
+                <p>
+                    Data recording and filtering were implemented through functions like <strong>lowPassX(), lowPassY(), and lowPassZ()</strong> to filter accelerometer data. This data was recorded into <strong>Current_Pass_X/Y/Z</strong> and <strong>In_Progress_Pass_X/Y/Z</strong> arrays for the saved and attempted passwords, respectively.
+                </p>
+            </div>
+        </div>
+
+        <!-- Performance Optimization -->
+        <div class="system-arch-category">
+            <div class="system-arch-title full-width">
+                <h3>Performance Optimization</h3>
+                <p>
+                    For performance optimization, the use of <strong>pointers</strong> for memory efficiency was considered instead of direct array referencing.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="divider-line"></div> 
+
+
+<!-- Separate Section for Image Header -->
+<section id="image-header" class="image-header-section fade-in section">
+    <img src="assets/static/final_bar.png" style="width: 100%;">
+</section>
+
+<!-- Final Designs Section -->
+<section id="final" class="final-designs-section fade-in section">
+    <div class="content">
+        <p>
+            This project as an assignment was focused on collaboration and innovation. It reinforced the idea that <strong>combining diverse expertise leads to more comprehensive solutions</strong>. Through the fusion of hardware engineering, software development, and user experience design, we crafted a system that not only secures data but also engages the user in a unique way.
+        </p>
+        <p>
+            The experience taught me the importance of <strong>flexibility and adaptability</strong> in problem-solving. Adapting the accelerometer's capabilities to a simple application, we explored our own ideas of how to define security systems. This endeavor highlighted how stepping out of conventional boundaries can lead to groundbreaking innovations.
+        </p>
+        <p>
+            Realizing this project would not have been as successful on my own, it was the diverse ideas and perspectives around me that enabled us to approach and achieve our shared desired outcome. In summary, this project was more than just an academic exercise; it was a real-world application of <strong>innovative teamwork</strong>. It has left me with a deeper understanding of the harmony between different technological fields and a renewed enthusiasm for creative problem-solving.
+        </p>
+    </div>
+</section>
+
+
+<!-- Separate Section for Image Header -->
+<section id="image-header" class="image-header-section fade-in section">
+    <img src="assets/static/retro_bar.png" style="width: 100%;">
+</section>
+
+<!-- Retrospective Section -->
+<section id="retrospective" class="retrospective-section fade-in section">
+    <div class="content">
+        <img src="assets/static/retro.png" class="retrospective-image">
+    </div>
+</section>
+
+
+
+      <script src="scripts.js"></script>
+
+</body>
+</html>

@@ -435,7 +435,7 @@
 }
 
 .project-link:hover .project-title {
-    color: rgb(80, 101, 155);
+    color: rgb(123, 143, 192);
     transform: translateY(-0.8px);
 }
 

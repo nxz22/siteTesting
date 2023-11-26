@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>naz's portfolio</title>
+    <link rel="stylesheet" href="transfer-styles.css">
+    <link rel="stylesheet" href="monk-styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+
+<body>
+
+    <div class="music-container">
+        <div class="drag-handle">Dragggggggggggggg</div>
+
+        <audio id="musicBar" controls autoplay>
+            <source src="assets/music/Pokemon ORAS OST - PokeMart.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+
+        <!-- CD Asset -->
+        <div class="cd" id="cdElement">
+            <img src="assets/static/disc.png" alt="CD" class="rotating">
+        </div>
+      
+        <!-- Music with title at the top -->
+        <div class="music-info">
+            <p class="music-title" id="musicTitle">
+                <span class="music-prefix">Now Playing</span>
+                <span id="songTitle">Pokémon: ORAS - PokéMart</span>
+            </p>
+            <img src="assets/static/musicbar.png" alt="Backdrop" class="music-backdrop">
+            <img src="assets/static/play.png" alt="Play" id="playPauseButton" class="play-pause">
+        </div>
+      </div>
+      
+    <!-- Mobile Menu Button -->
+    <div id="mobileMenuButton">
+        <img src="assets/static/mb_menu.png" alt="Menu" onclick="toggleMenu()"> 
+    </div>
+
+    <div id="mobileFullscreenMenu" class="mobile-fullscreen-menu">
+        <a href="" class="mobile-menu-option">
+            <img src="assets/static/home.png" alt="Home">
+            <span><strong>Home</strong></span>
+        </a>
+
+        <a href="tech.html" class="mobile-menu-option">
+            <img src="assets/static/tech.png" alt="Technical">
+            <span>Technical</span>
+        </a>
+
+        <a href="creative.html" class="mobile-menu-option">
+            <img src="assets/static/create.png" alt="Creative">
+            <span>Creative</span>
+        </a>
+
+        <a href="resume.html" class="mobile-menu-option">
+            <img src="assets/static/resume.png" alt="Resume">
+            <span>Resume</span>
+        </a>
+    </div>
+
+     <!-- Regular Menu -->
+    <div id="menuContainer" class="draggable">
+        <div class="drag-handle">Draggggg</div>
+
+        <img id="navbar" src="assets/static/navbar.png" class="navbar">
+      
+        <a href="index.html" class="menu-item but_index">
+            <img src="assets/static/home.png">
+        </a>
+      
+        <a href="tech.html" class="menu-item but_tech">
+            <img src="assets/static/tech.png">
+        </a>
+      
+        <a href="creative.html" class="menu-item but_create">
+            <img src="assets/static/create.png">
+        </a>
+        
+        <a href="resume.html" class="menu-item but_resume">
+            <img src="assets/static/resume.png">
+        </a>
+      </div>
+
+<!-- Page Exclusive -->
+<div class="title-container fade-down">
+    <span class="tiny-text">2023 - Advanced Computer Vision Integration </span>
+    <h1 class="main-title">Training Monkeys with Pokémon</h1>
+    <div class="project-tags">
+        <span class="tag">Python</span>
+        <span class="tag">Machine Learning</span>
+        <span class="tag">Solo Project</span>
+    </div>
+</div>
+
+<!-- Sidebar with Contents -->
+<aside class="sidebar fade-down">
+    <div class="sidebar-content">
+        <img src="assets/static/content_sec.png" alt="Sidebar Background" class="sidebar-background">
+        <ul>
+            <li><a href="#overview">Overview</a></li>
+            <li><a href="#highlights">Highlights</a></li>
+            <li><a href="#context">Context</a></li>
+            <li><a href="#design">Design Process</a></li>
+            <li><a href="#updateflow">Update Flow</a></li>
+            <li><a href="#visual">Visual Design</a></li>
+            <li><a href="#final">Final Design</a></li>
+            <li><a href="#retrospective">Retrospective</a></li>
+        </ul>
+    </div>
+</aside>
+
+
+
+<div class="full-screen-image">
+    <img src="assets/static/proj_backdrop.png" alt="Fullscreen Image">
+</div>
+<div class="overlay-layer fade-in">
+    <img src="assets/static/preview_test.png" alt="Overlay Image">
+</div>
+
+<!-- Overview section -->
+<section id="overview" class="overview fade-in">
+    <div class="content">
+        <div class="overview-split">
+            <div class="overview-left">
+                <h4>Tools Used</h4>
+                <p>AESprite, Python, TensorFlow, OpenCV, Google Colab</p>
+                <h4>Team</h4>
+                <p>Solo Project</p>
+                <h4>Timeline & Status</h4>
+                <p><strong>Project Duration:</strong> 2 Weeks <strong>Status:</strong> Successfully Completed</p>    
+            </div>
+            <div class="overview-right">
+                <h4>Overview</h4>
+                <p>Created a playful and technically complex system allowing a monkey to "play" Pokémon Emerald through movement-based controls.
+                    Modified the game to replace a Pokémon with a custom-designed monkey sprite. Developed a machine learning algorithm trained on 
+                    a dataset of over 2000+ monkey images to accurately detect the monkey's position.
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="divider-line"></div> 
+
+<!-- Highlights Section -->
+<section id="highlights" class="highlights-section fade-in section">
+    <div class="content">
+        <div class="highlights-title">
+            <h4>Project Highlights</h4>
+        </div>
+        <div class="highlights-image">
+            <img src="assets/monk/posthigh.png" class="posthigh" alt="Project Highlights">
+        </div>
+    </div>
+</section>
+
+<!-- Separate Section for Image Header -->
+<section id="image-header" class="image-header-section fade-in section">
+    <img src="assets/static/context_bar.png" style="width: 100%;">
+</section>
+
+<!-- Context Section -->
+<section id="context" class="context-section fade-in section">
+    <div class="content">
+        <div class="context-text">
+            <h1>Monkeys playing video games would be funny.</h1>
+            <p>The inspiration for this project stemmed from a desire to explore the potential of integrating animals with video games in a humorous way.
+                The challenge was to create a system that could accurately interpret the monkey's movements and translate them into in-game actions. 
+                This required a comprehensive understanding of both <strong>game modding</strong> and <strong>machine learning</strong>.
+                <strong>Modding knowledge was acquired through the decompilation of the game</strong>, learning from the open-source project found on 
+                <a href="https://github.com/pret/pokeemerald" target="_blank"><u>GitHub</u></a>.
+           </p>
+            <div class="new-image">
+                <img src="assets/monk/monkeygame.png" alt="New Context Image">
+            </div>
+        </div>
+        <div class="context-image">
+            <img src="assets/monk/proj_paper.png">
+        </div>
+    </div>
+</section>
+
+<!-- Separate Section for Image Header -->
+<section id="image-header" class="image-header-section fade-in section">
+    <img src="assets/monk/design_bar.png" style="width: 100%;">
+</section>
+
+<!-- Retrospective Section -->
+<section id="design" class="design-section fade-in section"> </section>
+<img src="assets/monk/design_pro.png" class="design_pro fade-in">
+
+<!-- Separate Section for Image Header -->
+<section id="image-header" class="image-header-section fade-in section">
+    <img src="assets/monk/update_bar.png" style="width: 100%;">
+</section>
+
+<!-- Update Flow Section -->
+<section id="updateflow" class="update-flow-section fade-in section"> </section>
+<img id="updateflow-img" src="assets/monk/proj_diagram.png" alt="Project Layout Image">
+
+
+<!-- Separate Section for Image Header -->
+<section id="image-header" class="image-header-section fade-in section">
+    <img src="assets/monk/visual_bar.png" style="width: 100%;">
+</section>
+
+<!-- Layout Section -->
+<section id="visual" class="visual-section fade-in section">
+    <div class="content">
+        <div class="layout-container">
+            <div class="layout-text">
+                <p>
+                    Initially, I just <strong>doodled a few sketches</strong> of the monkey, driven to enhance immersion. It felt weird having monkeys control gameplay without being a part of it. This led me to delve into <strong>modding and customizing the game's Pokémon data</strong>, replacing Aipom's data with my own creation. A few key takeaways included the <strong>15-color limit for each sprite</strong> and the need to consider factors like the game's HUD and a <strong>32x32 pixel display</strong>. This constraint required thoughtful design to make the monkey visually appealing within these limits.
+                </p>
+                <p>
+                    The program's functionality relies on an <strong>XML file</strong>, compiled from a comprehensive database of over <strong>2000+ monkey images</strong>. To synchronize gameplay with real-time monkey movements, I employed a unique approach of monitoring for battle state via <strong>memory reading from 'pokeemerald' data structures</strong>. The visual design of the program's interface features a simple yet effective layout: a video feed of the monkey divided into four quadrants by red lines. Each quadrant is labeled with an attack option in the bottom left corner, corresponding to manually inputted game attacks. This setup not only enhances user interaction but also creates an immersive experience, simulating a collaborative play with a real monkey.
+                </p>
+            </div>
+            <div class="layout-images">
+                <img src="assets/monk/visual1.png" alt="Image 1" class="image-small">
+                <img src="assets/monk/visual2.png" alt="Image 2" class="image-large">
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+<!-- Separate Section for Image Header -->
+<section id="image-header" class="image-header-section fade-in section">
+    <img src="assets/static/final_bar.png" style="width: 100%;">
+</section>
+
+<!-- Final Designs Section -->
+<section id="final" class="final-designs-section fade-in section">
+    <div class="content">
+        <p>
+            This project as an assignment was focused on collaboration and innovation. It reinforced the idea that <strong>combining diverse expertise leads to more comprehensive solutions</strong>. Through the fusion of hardware engineering, software development, and user experience design, we crafted a system that not only secures data but also engages the user in a unique way.
+        </p>
+        <p>
+            The experience taught me the importance of <strong>flexibility and adaptability</strong> in problem-solving. Adapting the accelerometer's capabilities to a simple application, we explored our own ideas of how to define security systems. This endeavor highlighted how stepping out of conventional boundaries can lead to groundbreaking innovations.
+        </p>
+        <p>
+            Realizing this project would not have been as successful on my own, it was the diverse ideas and perspectives around me that enabled us to approach and achieve our shared desired outcome. In summary, this project was more than just an academic exercise; it was a real-world application of <strong>innovative teamwork</strong>. It has left me with a deeper understanding of the harmony between different technological fields and a renewed enthusiasm for creative problem-solving.
+        </p>
+    </div>
+</section>
+
+
+<!-- Separate Section for Image Header -->
+<section id="image-header" class="image-header-section fade-in section">
+    <img src="assets/static/retro_bar.png" style="width: 100%;">
+</section>
+
+<!-- Retrospective Section -->
+<section id="retrospective" class="retrospective-section fade-in section">
+    <div class="content">
+        <img src="assets/static/retro.png" class="retrospective-image">
+    </div>
+</section>
+
+
+
+      <script src="scripts.js"></script>
+
+</body>
+</html>

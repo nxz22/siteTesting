@@ -1,0 +1,507 @@
+ /*Mobile Menu*/
+
+ .mobile-menu-option {
+    display: flex;
+    align-items: center; 
+    text-decoration: none;
+    color: #123456;
+    font-size: 18px; 
+    font-weight: 100px;
+    margin-bottom: 50px; 
+    transition: transform 0.2s ease;
+}
+
+.mobile-menu-option img {
+    width: 50px;
+    height: auto; 
+    margin-right: 15px; 
+
+}
+
+.mobile-menu-option span {
+    color: rgb(64, 79, 119); 
+    font-size: 20px;
+    font-weight: 40px;
+}
+
+.mobile-menu-option:hover {
+    transform: scale(1.1); 
+}
+
+#mobileFullscreenMenu .mobile-menu-option:not(:nth-child(3)) {
+    opacity: 0.6;
+}
+
+
+#mobileFullscreenMenu {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, #EBDEB6, #FBEBAE);
+    z-index: 1000; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    transform: translateY(-100%); 
+    transition: transform 0.5s ease; 
+    
+}
+
+#mobileFullscreenMenu.show {
+    transform: translateY(0); 
+}
+
+#mobileMenuButton {
+    display: none;
+    position: fixed;
+    top: 30px; 
+    right: 20px; 
+    z-index: 1001; 
+}
+
+#mobileMenuButton img{
+    width: 20vw;
+}
+
+
+@media only screen and (max-width: 481px) {
+    #mobileMenuButton img {
+        width: 15vw; 
+    }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 1024px) {
+    #mobileMenuButton img {
+        width: 10vw; 
+    }
+}
+
+  @media only screen and (max-width: 1024px) {
+    #mobileMenuButton {
+        display: block; 
+    }
+
+    .music-container{
+        display: none;
+        pointer-events: none;
+    }
+    
+    #menuContainer {
+      display: none; 
+    }
+
+    .content-section {
+      flex-direction: column; 
+      align-items: flex-start; 
+    }
+  
+    .text-container {
+      width: 100%; 
+    }
+  }
+
+.but_index, .but_tech, .but_resume, .but_create{
+    left: 25px;
+    width: 40%;
+  }
+
+  .but_index:hover img, .but_tech:hover img, .but_resume:hover img, .but_create:hover img{
+    transition: transform 0.3s;
+    transform: scale(1.1);
+  }
+
+ .but_tech, .but_resume, .but_index{
+    opacity: 30%;
+  }
+
+  .but_index {
+    top: 40px;
+  }
+  
+  .but_tech {
+    top: 100px; 
+  }
+  
+  .but_create {
+    top: 155px; 
+  }
+  .but_resume {
+    left: 28px;
+    top: 215px; 
+  }
+
+  .divider-line {
+    height: 1px;
+    width: 50%;
+    background-color: rgb(64, 79, 119, 0.2);
+    margin: 0 auto; 
+    margin-bottom: 10px;
+}
+
+/*Page Exclusive */
+
+.title-container {
+    zoom: 95%;
+    position: absolute;
+    top: calc(20px + 130px);
+    left: 54px;
+    z-index: 101;
+    max-width: 360px;  
+}
+
+.tiny-text {
+    display: block;
+    font-size: 16.2px;
+    margin-bottom: -18px;
+}
+
+.main-title {
+    font-size: 32.4px;
+    margin-bottom: 6.3px;
+    word-wrap: break-word;
+}
+
+.tag {
+    display: inline-block;
+    background-color: #748FDE; 
+    border-radius: 15px;
+    padding: 5px 15px;
+    margin-right: 3px;
+    font-size: 12px;
+    color: #ffffff;
+}
+
+.project-tags .tag:last-child {
+    background-color: #EDAD58; 
+}
+
+.sidebar {
+    position: absolute;
+    top: 340px;
+    left: 70px;
+    z-index: 100;
+    width: 200px;
+    height: 320px; /* Fixed height for the sidebar */
+}
+
+.sidebar-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; /* Ensures background covers the entire sidebar */
+    z-index: -1;
+    background-size: cover; /* Ensures background image covers the entire area without being distorted */
+}
+
+
+.sidebar-content {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 1; /* Above the background */
+}
+
+.sidebar ul {
+    list-style: none; /* Removes the default bullets from the list */
+    padding: 0; /* Removes default padding around the list */
+    margin: 0; /* Removes default margin around the list */
+    height: 112%; /* Sets the height of the ul to fill the entire height of its parent container (sidebar) */
+    display: flex; /* Enables flexbox layout for direct children (li elements) */
+    flex-direction: column; /* Arranges the li elements in a vertical column */
+    justify-content: center; /* Vertically centers the li elements within the ul container */
+}
+
+
+.sidebar li {
+    font-size: 14px; /* Sets the font size of the list items */
+    margin-bottom: 15px; /* Adds space below each list item */
+    display: flex; /* Enables flexbox layout for contents of li */
+    align-items: center; /* Vertically centers the content (like text and images) inside each list item */
+    justify-content: left; /* Aligns items to the left within each li; for horizontal centering, use 'center' */
+}
+
+
+.sidebar a {
+    color: #425178; /* Sets the text color of the links */
+    text-decoration: none; /* Removes the underline from links */
+    padding-left: 30px; /* Adds padding to the left of the link text */
+    display: block; /* Makes the link take up the full width of its container */
+    font-weight: 400; /* Sets the initial font weight of the link text */
+    transition: font-weight 0.3s ease; /* Smooth transition for font-weight change */
+}
+
+.sidebar a:hover {
+    font-weight: bold; /* Makes text bold on hover */
+}
+
+.company-logo {
+    width: 180px; 
+    height: auto;
+    margin-bottom: 5px;
+    pointer-events: none;
+    user-select: none;
+}
+
+.full-screen-image {
+    opacity: 70%;
+    width: 100%; /* Full width */
+    height: 600px; /* Fixed height, you can set this to whatever you like */
+    overflow: hidden; /* Prevents any overflow from creating scrollbars */
+    position: relative; /* For positioning the image within this container */
+    margin-top: 100px; /* Space at the top, adjust as needed */
+    pointer-events: none;
+    user-select: none;
+}
+
+.full-screen-image img {
+    width: 100%; /* Make image fill the container width */
+    height: 100%; /* Make image fill the container height */
+    object-fit: cover; /* This will cover the area, potentially clipping the image */
+    position: absolute; /* Position it absolutely within the .full-screen-image div */
+    top: 0; /* Align to the top of the container */
+}
+
+.overlay-layer {
+    position: absolute;
+    bottom: 30px; /* Align to the top of the nearest positioned ancestor */
+    right: 20px; /* Align to the left of the nearest positioned ancestor */
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    z-index: 2; /* Ensure this is above the full-screen image */
+    user-select: none;
+    pointer-events: none;
+}
+
+.overlay-layer img {
+    max-height: 45%;
+}
+
+
+/* Existing CSS for overview */
+#overview {
+    margin-left: 63px;
+    position: relative;
+}
+
+.overview-split h4 {
+    font-size: 18px;
+    margin-bottom: 2px; 
+}
+
+.overview-split p {
+    font-size: 15px;
+    margin-top: 11px; 
+}
+
+.overview-split {
+    display: flex;
+    justify-content: space-between; 
+    align-items: flex-start; 
+    max-width: 1000px;
+    margin: 0 auto;
+    flex-wrap: wrap; 
+}
+
+.overview-left, .overview-right {
+    flex-basis: 45%; 
+    padding: 18px;
+}
+/*Project Highlights*/
+
+/* CSS for highlights section layout */
+.highlights-section .content {
+    display: flex;
+    align-items: center;
+}
+
+.highlights-title h4 {
+    margin-bottom: 20px; 
+    position: relative; 
+    bottom: 100px; 
+    width: 140px;
+    font-weight: 900;
+    font-size: 20px;
+}
+.highlights-title {
+    flex-grow: 1;
+}
+
+.highlights-image {
+    flex-grow: 2;
+    text-align: right;
+    pointer-events: none;
+    user-select: none;
+}
+
+.highlights-image .posthigh {
+    width: auto; 
+    max-width: 90%;
+    height: auto;
+}
+
+
+/* CSS for mobile view */
+@media (max-width: 768px) {
+    .highlights-section .content {
+        flex-direction: column;
+        align-items: flex-start; 
+    }
+
+    .highlights-title h4 {
+        bottom: 20px; 
+        width: 100px;
+    }
+    .highlights-image .posthigh {
+        content: url('../../assets/monk/posthigh_mob.png');
+        width: 70%;
+        margin-top: 10px; 
+    }
+}
+.context-section .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.context-text, .context-image {
+    flex-basis: 48%; 
+}
+
+.context-text {
+    display: flex;
+    flex-direction: column; 
+}
+
+.context-text .new-image img {
+    width: 73%; /* Adjust this to control the width of the new image */
+    height: auto; /* Maintain aspect ratio */
+    display: block;
+    margin: 0 auto; /* Center the image within the context-text div */
+    transform: translateY(10px); 
+    
+}
+
+.context-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.design_pro {
+    min-width: 900px; /* Set the minimum width */
+    width: 60%; /* Set width greater than 100% to extend beyond the container */
+    height: auto; /* Maintain aspect ratio */
+    position: relative; /* Position relative to its normal position */
+    display: block;
+    margin: 0 auto;
+    user-select: none;
+}
+
+
+#updateflow-img {
+    display: block; /* Makes the image a block-level element */
+    margin: 0 auto; /* Centers the image horizontally */
+    max-width: 100%; /* Ensures the image does not exceed the width of its container */
+    width: 65%; /* Example width, adjust as needed */
+    height: auto; /* Maintains the aspect ratio */
+    user-select: none;
+}
+
+@media (max-width: 768px) {
+    #updateflow img {
+        width: 100%; /* Adjust for smaller screens as needed */
+    }
+}
+
+.layout-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.layout-text{
+    width: 46%; /* Adjust width as necessary */
+    transform: translateY(55px);
+}
+
+.image-small {
+    width: 80%; /* Smaller width for Image 1 */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.image-large {
+    width: 100%; /* Larger width for Image 2 */
+    height: auto; /* Maintain aspect ratio */
+}
+
+
+.layout-images {
+    width: 49%;
+    height: auto;
+}
+
+#retrospective-image{
+    user-select: none;
+    pointer-events: none;
+}
+
+/* Common styles for each section */
+.section {
+    max-width: 970px;
+    margin: 0 auto;
+    padding: 18px;
+}
+
+.section h2 {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.section p, .section ul, .section img {
+    font-size: 15px;
+    margin-top: 11px;
+}
+
+.section ul {
+    padding-left: 20px;
+}
+
+.section img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto 20px;
+    pointer-events: none;
+    user-select: none;
+}
+
+#image-header {
+    width: 46%;
+    min-width: 600px;
+    padding-bottom: -10px; /* Space inside the section, below the image */
+    margin-bottom: -50px; /* Space outside the section, below the image */
+}
+
+
+@media (max-width: 768px) {
+    .overview-split {
+        flex-direction: column;
+    }
+
+    .overview-left, .overview-right {
+        flex-basis: 100%;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .sidebar {
+        display: none;
+    }
+}
